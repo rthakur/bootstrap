@@ -1,0 +1,16 @@
+
+  #wizard {
+    background: #f9f9f9;
+    margin: 1%;
+    padding: 15px;
+  }
+  #wizard ul li {
+    display: inline-table;
+    padding: 21px;
+  }
+  #wizard ul li.active a {
+      color: red;
+  }
+  .hide{
+    display: none;
+  }
