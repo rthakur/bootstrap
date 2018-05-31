@@ -1,16 +1,64 @@
+.hide{
+  display: none;
+}
+#wizard {
+  margin: 1%;
+  padding: 15px;
+}
+#wizard ul {
+  background: #eeeeef;
+}
+#wizard ul li {
+  display: inline-table;
+  padding: 21px;
+}
+#wizard ul li.active a {
+    color: red;
+}
 
-  #wizard {
-    background: #f9f9f9;
-    margin: 1%;
-    padding: 15px;
-  }
-  #wizard ul li {
-    display: inline-table;
-    padding: 21px;
-  }
-  #wizard ul li.active a {
-      color: red;
-  }
-  .hide{
+#wizard .btn-primary {
+  color: #fff;
+  background-color: #e44330;
+  border-color: #e44330;
+}
+#wizard button.btn {
+  width: 172px;
+  font-weight: bold;
+}
+.steps-container {
+    padding: 10px 64px;
+}
+
+input[type="checkbox"] + label:before {
+  border: 1px solid #333;
+  content: "\00a0";
+  display: inline-block;
+  font: 16px/1em sans-serif;
+  height: 16px;
+  margin: 0 .25em 0 0;
+  padding: 0;
+  vertical-align: top;
+  width: 16px;
+}
+input[type="checkbox"]:checked + label:before {
+  background: #fff;
+  color: #333;
+  content: "\2713";
+  text-align: center;
+}
+input[type="checkbox"]:checked + label:after {
+  font-weight: bold;
+}
+
+input[type="checkbox"]:focus + label::before {
+    outline: rgb(59, 153, 252) auto 5px;
+}
+
+
+
+/* Small Devices, Tablets or Less screen size */
+@media only screen and (max-width : 768px) {
+  .tab-name{
     display: none;
   }
+}

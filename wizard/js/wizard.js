@@ -1,5 +1,6 @@
 var tab = 0;
 controlWizardTabs(tab);
+
 $('#wizard ul a').click(function(){
   controlWizardTabs($(this).data('step'));
 });
@@ -15,13 +16,13 @@ function controlWizardTabs( tab )
   else
     $('.btn-previous').show();
 
-  if( tab <= 2 )
+  if( tab >= ( $('.step').length -1 ) )
   {
-    $('.btn-finish').hide();
-    $('.btn-next').show();
-  }else{
     $('.btn-finish').show();
     $('.btn-next').hide();
+  }else{
+    $('.btn-finish').hide();
+    $('.btn-next').show();
   }
 
   $('.step').addClass('hide');
